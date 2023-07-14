@@ -135,6 +135,8 @@ int main(void)
   	f_read(file, propertiesBmp.bidColorPlane,2,NULL);
   	f_read(file, propertiesBmp.bidBitPerPixel,2,NULL);
   	uint32_t offset;
+  	uint32_t width;
+  	uint32_t height;
   	memcpy(&offset, propertiesBmp.bmpSize,4);
   	memcpy(&width, propertiesBmp.bidWidth,4);
   	memcpy(&height, propertiesBmp.bidHeight,4);
